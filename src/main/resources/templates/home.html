@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="https://www.thymeleaf.org"
+        xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+
+
+<head>
+    <title>home</title>
+</head>
+
+
+
+<body>
+<h1>Welcome!</h1>
+<p>Click <a th:href="@{/hello}">here</a> to login.</p>
+
+<div class="row">
+    <div class="col-md-12">
+        <img class="img-responsive" src="../static/resources/images/Meteorcomm.png" th:src="@{/resources/images/Meteorcomm.png}"/>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
