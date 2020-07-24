@@ -4,10 +4,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class QuoteClass {
-    JokeService jokeService;
-    QuoteService quoteService;
+    private final JokeService jokeService;
+    private final QuoteService quoteService;
 
-    public QuoteClass() {
+    public QuoteClass(QuoteService quoteService, JokeService jokeService) {
+        this.quoteService = quoteService;
+        this.jokeService = quoteService;
     }
 
     public void getAJoke(){
